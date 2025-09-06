@@ -12,7 +12,7 @@ const Home = () => {
     "Empresa Química DEF",
     "Metalúrgica GHI",
     "Indústria Alimentícia JKL",
-    "Petroquímica MNO"
+    "Petroquímica MNO",
   ];
 
   return (
@@ -26,17 +26,21 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-primary/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#003366]/90 to-[#001a33]/80"></div>
         <div className="relative z-10 container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Soluções em instalações industriais
             <br />
-            <span className="text-accent-foreground">com segurança e eficiência</span>
+            <span className="text-accent-foreground">
+              com segurança e eficiência
+            </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
-            Desde 1996 atuando em elétrica, hidráulica e montagem eletromecânica.
+            Desde 1996 atuando em elétrica, hidráulica e montagem
+            eletromecânica.
             <br />
-            Projetos, execução e manutenção para indústrias em Sorocaba e região.
+            Projetos, execução e manutenção para indústrias em Sorocaba e
+            região.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
@@ -45,7 +49,11 @@ const Home = () => {
                 Solicitar Orçamento
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white text-primary hover:bg-white hover:text-primary"
+            >
               <FileText className="mr-2 h-5 w-5" />
               Download Catálogo
             </Button>
@@ -61,14 +69,20 @@ const Home = () => {
               Clientes que Confiam em Nosso Trabalho
             </h2>
             <p className="text-muted-foreground text-lg">
-              Empresas que já contrataram nossos serviços e garantiram qualidade e segurança
+              Empresas que já contrataram nossos serviços e garantiram qualidade
+              e segurança
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {clients.map((client, index) => (
-              <Card key={index} className="hover:shadow-corporate transition-all duration-300 transform hover:-translate-y-1">
+              <Card
+                key={index}
+                className="hover:shadow-corporate transition-all duration-300 transform hover:-translate-y-1"
+              >
                 <CardContent className="p-6 text-center">
-                  <Badge variant="secondary" className="mb-3">Cliente</Badge>
+                  <Badge variant="secondary" className="mb-3">
+                    Cliente
+                  </Badge>
                   <h3 className="font-semibold text-primary">{client}</h3>
                 </CardContent>
               </Card>
@@ -85,7 +99,8 @@ const Home = () => {
               Nossos Principais Serviços
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Oferecemos soluções completas para instalações industriais com mais de 25 anos de experiência
+              Oferecemos soluções completas para instalações industriais com
+              mais de 25 anos de experiência
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -94,9 +109,12 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl text-white">⚡</span>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-3">Instalações Elétricas</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  Instalações Elétricas
+                </h3>
                 <p className="text-muted-foreground">
-                  Projetos e execução de sistemas elétricos industriais com máxima segurança
+                  Projetos e execução de sistemas elétricos industriais com
+                  máxima segurança
                 </p>
               </CardContent>
             </Card>
@@ -105,7 +123,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl text-white">🔧</span>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-3">Hidráulica Industrial</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  Hidráulica Industrial
+                </h3>
                 <p className="text-muted-foreground">
                   Sistemas hidráulicos completos para processos industriais
                 </p>
@@ -116,7 +136,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl text-white">⚙️</span>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-3">Montagem Eletromecânica</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  Montagem Eletromecânica
+                </h3>
                 <p className="text-muted-foreground">
                   Montagem e manutenção de equipamentos eletromecânicos
                 </p>
@@ -140,7 +162,12 @@ const Home = () => {
           <p className="text-xl mb-8 opacity-90">
             Entre em contato conosco e receba uma proposta personalizada
           </p>
-          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-white text-white hover:bg-white hover:text-primary"
+            asChild
+          >
             <Link to="/contato">
               <Phone className="mr-2 h-5 w-5" />
               Falar Conosco
